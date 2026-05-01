@@ -38,6 +38,19 @@ import { Rider } from './rider/rider.entity';
           },
         }),
       },
+      {
+        name: 'ADDRESS_SERVICE',
+        inject: [ConfigService],
+        useFactory: (configService: ConfigService) => ({
+          transport: Transport.TCP,
+          options: {
+            host: configService.get<string>('ADDRESS_TCP_HOST', '127.0.0.1'),
+            port: Number(
+              configService.get<string>('ADDRESS_TCP_PORT', '3001'),
+            ),
+          },
+        }),
+      },
     ]),
   ],
   controllers: [LoggingController],

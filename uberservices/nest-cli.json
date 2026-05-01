@@ -10,13 +10,13 @@
   "monorepo": true,
   "root": "apps/uberservices",
   "projects": {
-    "address-from-cords": {
+    "address-from-cord": {
       "type": "application",
-      "root": "apps/address-from-cords",
+      "root": "apps/address-from-cord",
       "entryFile": "main",
-      "sourceRoot": "apps/address-from-cords/src",
+      "sourceRoot": "apps/address-from-cord/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/address-from-cords/tsconfig.app.json"
+        "tsConfigPath": "apps/address-from-cord/tsconfig.app.json"
       }
     },
     "logging": {

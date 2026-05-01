@@ -10,6 +10,9 @@ import {
 import { LoggingService } from './logging.service';
 import { CreateRiderDto } from './rider/dto/create-rider.dto';
 import { Rider } from './rider/rider.entity';
+import { AddressResponse } from './address/address.types';
+
+type RiderWithAddress = Rider & AddressResponse;
 
 @Controller('riders')
 export class LoggingController {
@@ -23,7 +26,7 @@ export class LoggingController {
   @Get(':id')
   async getRiderById(
     @Param('id', ParseIntPipe) id: number,
-  ): Promise<Rider> {
+  ): Promise<RiderWithAddress> {
     const rider = await this.loggingService.getRiderById(id);
 
     if (!rider) {
