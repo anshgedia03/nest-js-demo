@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/rabbitMQ/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/rabbitMQ/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/rabbitMQ",
+  "projects": {
+    "email_consumer": {
+      "type": "application",
+      "root": "apps/email_consumer",
+      "entryFile": "main",
+      "sourceRoot": "apps/email_consumer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/email_consumer/tsconfig.app.json"
+      }
+    },
+    "rabbitMQ": {
+      "type": "application",
+      "root": "apps/rabbitMQ",
+      "entryFile": "main",
+      "sourceRoot": "apps/rabbitMQ/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/rabbitMQ/tsconfig.app.json"
+      }
+    },
+    "score_consumer": {
+      "type": "application",
+      "root": "apps/score_consumer",
+      "entryFile": "main",
+      "sourceRoot": "apps/score_consumer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/score_consumer/tsconfig.app.json"
+      }
+    },
+    "score_producer": {
+      "type": "application",
+      "root": "apps/score_producer",
+      "entryFile": "main",
+      "sourceRoot": "apps/score_producer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/score_producer/tsconfig.app.json"
+      }
+    },
+    "user_producer": {
+      "type": "application",
+      "root": "apps/user_producer",
+      "entryFile": "main",
+      "sourceRoot": "apps/user_producer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user_producer/tsconfig.app.json"
+      }
+    }
+  }
+}
