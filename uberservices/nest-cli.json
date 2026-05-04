@@ -37,6 +37,15 @@
         "tsConfigPath": "apps/rider/tsconfig.app.json"
       }
     },
+    "ui-service": {
+      "type": "application",
+      "root": "apps/ui-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/ui-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ui-service/tsconfig.app.json"
+      }
+    },
     "uberservices": {
       "type": "application",
       "root": "apps/uberservices",
