@@ -6,6 +6,6 @@ async function bootstrap() {
   const port = Number(process.env.PORT ?? 3000);
 
   await app.listen(port);
-  console.log(`Sensor Producer Service is running on http://localhost:${port}`);
+
 }
 bootstrap();

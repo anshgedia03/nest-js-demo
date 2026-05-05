@@ -32,6 +32,6 @@ async function bootstrap() {
   });
 
   await app.listen();
-  console.log('Warehouse Consumer Service is listening for MQTT messages');
+
 }
 bootstrap();
