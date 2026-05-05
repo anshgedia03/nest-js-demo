@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/sensor-producer/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/sensor-producer/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/sensor-producer",
+  "projects": {
+    "sensor-producer": {
+      "type": "application",
+      "root": "apps/sensor-producer",
+      "entryFile": "main",
+      "sourceRoot": "apps/sensor-producer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/sensor-producer/tsconfig.app.json"
+      }
+    },
+    "warehouse-consumer": {
+      "type": "application",
+      "root": "apps/warehouse-consumer",
+      "entryFile": "main",
+      "sourceRoot": "apps/warehouse-consumer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/warehouse-consumer/tsconfig.app.json"
+      }
+    }
+  }
+}
