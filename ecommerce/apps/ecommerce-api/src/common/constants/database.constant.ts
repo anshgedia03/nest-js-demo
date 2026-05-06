@@ -1,0 +1,10 @@
+export const DATABASE_CONSTANTS = {
+  TYPE: 'postgres',
+  HOST_KEY: 'DB_HOST',
+  PORT_KEY: 'DB_PORT',
+  USERNAME_KEY: 'DB_USERNAME',
+  PASSWORD_KEY: 'DB_PASSWORD',
+  NAME_KEY: 'DB_NAME',
+  SYNC_KEY: 'DB_SYNC',
+  LOGGING_KEY: 'DB_LOGGING',
+} as const;

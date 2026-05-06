@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "monorepo": true,
+  "collection": "@nestjs/schematics",
+  "root": "apps/ecommerce-api",
+  "sourceRoot": "apps/ecommerce-api/src",
+  "projects": {
+    "ecommerce-api": {
+      "type": "application",
+      "root": "apps/ecommerce-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/ecommerce-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "tsconfig.build.json"
+      }
+    },
+    "notification-service": {
+      "type": "application",
+      "root": "apps/notification-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "tsconfig.build.json"
+      }
+    }
+  }
+}

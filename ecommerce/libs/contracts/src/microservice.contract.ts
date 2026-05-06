@@ -1,0 +1,6 @@
+export const MICROSERVICE_CONSTANTS = {
+  NOTIFICATION_CLIENT: 'NOTIFICATION_CLIENT',
+  ORDER_CREATED_EVENT: 'order_created',
+  RABBITMQ_URL_CONFIG_PATH: 'rabbitmq.url',
+  RABBITMQ_QUEUE_CONFIG_PATH: 'rabbitmq.queue',
+} as const;
